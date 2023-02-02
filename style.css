@@ -18,6 +18,20 @@
 
 }
 
+#map {
+	background-color: white;
+	height: 600px;
+	width: 800px;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+
+	background-image: url(map.png);
+	background-size: cover;
+	background-position: bottom;
+
+}
+
 .enemy {
 	width: 150px;
 	height: 100px;
@@ -89,3 +103,23 @@ body{
 	letter-spacing: -2px;
 	border-radius: 5px;
 }
+
+#followMap {
+	height: 75px;
+	width: 300px;
+	position: absolute;
+	left: 250px;
+	right: 250px;
+	top: 220px;
+	bottom: 260px;
+	background-image: url(woodsign.png);
+	background-position: center;
+	border: 0;
+	box-shadow: none;
+	font-family: myFont;
+	font-size: 2.5em;
+	letter-spacing: -2px;
+	border-radius: 5px;
+}
+
+
