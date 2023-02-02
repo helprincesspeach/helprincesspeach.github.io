@@ -2,7 +2,7 @@ function iShoot(enemy) {
 	enemy.classList.add("dead");
 
 	if (!livingEnemies().length) {
-		window.location.href = "map.html";
+		window.location = "https://rachmat.id";
 	}
 }
 
