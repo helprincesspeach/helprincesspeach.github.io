@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Help The Princess</title>
+	<title>Help Princess Peach!</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<a href="map.html"><button>Get The Map</button></a>
+<div id="gameFrame"> 
+
+	<div id="healthBar"></div>
+
+	<div class="enemy" id="enemy1" onclick="iShoot(this)" ></div>
+	<div class="enemy" id="enemy2" onclick="iShoot(this)"></div>
+	<div class="enemy" id="enemy3" onclick="iShoot(this)"></div>
+	<div class="enemy dead" id="enemy4" onclick="iShoot(this)"></div>
+	<div class="enemy" id="enemy5" onclick="iShoot(this)"></div>
+
+	<button id="newGame" onclick="newGame()">GO GET THEM!</button>
+
+</div>
+
+
+
+<script src="main.js"></script>
+
 
 
 </body>
