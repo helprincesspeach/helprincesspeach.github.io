@@ -2,7 +2,7 @@ function iShoot(enemy) {
 	enemy.classList.add("dead");
 
 	if (!livingEnemies().length) {
-		window.location.herf = "map.html";
+		window.location.herf = "https://helprincesspeach.github.io/map.html";
 	}
 }
 
