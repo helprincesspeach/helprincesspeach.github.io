@@ -1,1 +1,91 @@
+@font-face{
+	font-family: myFont;
+	src: url(SuperMario256.ttf);
+}
 
+#gameFrame {
+	background-color: black;
+	height: 600px;
+	width: 800px;
+	margin: auto;
+	position: relative;
+	overflow: hidden;
+
+	background-image: url(background.jpg);
+	background-size: cover;
+	background-position: bottom;
+	cursor: crosshair;
+
+}
+
+.enemy {
+	width: 150px;
+	height: 100px;
+	border-radius: 100%;
+	position: absolute;
+	background-image: url(bowser4.png);
+	background-position: center;
+	bottom: -400px;
+}
+
+#enemy1 { left: 5px }
+#enemy2 { left: 165px }
+#enemy3 { left: 325px }
+#enemy4 { left: 485px }
+#enemy5 { left: 645px }
+
+.enemy.dead {
+	opacity: 50%;
+	transform: rotate(-180deg);
+	height: 50px;
+	bottom: -100px;
+	transition-duration: .3s;
+}
+
+.enemy.showing {
+	bottom: 200px;
+}
+
+.enemy.shooting{
+	width: 228px;
+	height: 221px;
+	background-image: url(fire.png);
+	transition-duration: .10s;
+
+	
+}
+
+#healthBar{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 100%;
+	background-color: white;
+	transition: width .5s;
+}
+
+body{
+	background-color: black;
+	color: coral;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+#newGame {
+	height: 75px;
+	width: 300px;
+	position: absolute;
+	left: 250px;
+	right: 250px;
+	top: 220px;
+	bottom: 260px;
+	background-image: url(woodsign.png);
+	background-position: center;
+	border: 0;
+	box-shadow: none;
+	font-family: myFont;
+	font-size: 2.5em;
+	letter-spacing: -2px;
+	border-radius: 5px;
+}
