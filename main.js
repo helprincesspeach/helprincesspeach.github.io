@@ -2,9 +2,7 @@ function iShoot(enemy) {
 	enemy.classList.add("dead");
 
 	if (!livingEnemies().length) {
-		document.querySelector("button").style.display = "initial";
-		button.textContent = 'GET THE MAP!';
-		window.location.reload();
+		window.location = map.html;
 	}
 }
 
