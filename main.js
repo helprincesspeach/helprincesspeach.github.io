@@ -2,7 +2,7 @@ function iShoot(enemy) {
 	enemy.classList.add("dead");
 
 	if (!livingEnemies().length) {
-		window.location = map.html;
+		window.location = (map.html);
 	}
 }
 
